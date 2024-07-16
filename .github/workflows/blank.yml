@@ -38,7 +38,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            octokit.rest.issues.create({
+            github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: "a random issue",
